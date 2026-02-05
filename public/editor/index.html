@@ -5,18 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Content Manager</title>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <link rel="stylesheet" href="https://identity.netlify.com/v1/netlify-identity-widget.css">
+  <style>
+    .netlify-identity-modal {
+      z-index: 99999 !important;
+    }
+  </style>
 </head>
 <body>
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script> 
 
-  <!-- Netlify Identity Widget -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  
   <script>
     // Initialize Netlify Identity
     if (window.netlifyIdentity) {
       window.netlifyIdentity.init();
   
-      // Automatically open the recovery modal if the token is in the URL
+      // Automatically open recovery modal if token is in URL
       window.addEventListener('load', function() {
         const hash = window.location.hash;
         if (hash.includes('recovery_token')) {
