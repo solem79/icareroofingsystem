@@ -1,0 +1,5 @@
+[
+  { "title": "Slide 1", "desc": "Sample slide", "url": "/assets/images/uploads/slide1.jpg" },
+  { "title": "Slide 2", "desc": "Another slide", "url": "/assets/images/uploads/slide2.jpg" },
+  { "title": "Slide 3", "desc": "Third slide", "url": "/assets/images/uploads/slide3.jpg" }
+]
